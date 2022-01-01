@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.1.0/united/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Sign Up</title>
+</head>
+<body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding: 2em;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="colorLogo.png" width="45" alt="" class="d-inline-block align-middle mr-2" style="padding-right: 0.5em; "><span class="font-weight-bold" >ToolPool</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarColor03">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link " href="index.html">Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Help & Contact</a>
+          </li>
+         
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          
+          <li class="nav-item bg-primary " style="border-radius: 1em; padding-left: 0.5em; padding-right: 0.5em; margin-left: 0.3em;" >
+            <a class="nav-link" href="#" style="font-weight: bolder; color: #F8F9FA; ">+ Item</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+  <form class="mx-auto mt-5"  style="max-width:50%">
+    <fieldset>
+      <legend>Create a new account!</legend>
+  
+       
+      <div class="form-group">
+        <label for="SignUpInputName" class="form-label mt-4">Your Full Name</label>
+        <input type="text" class="form-control" id="SignUpInputName" placeholder="John Doe" >
+      </div>
+      <div class="form-group">
+        <label for="SignUpInputUsername" class="form-label mt-4">Username</label>
+        <input type="text" class="form-control" id="SignUpInputUsername" placeholder="enter username" >
+      </div>
+      <div class="form-group">
+        <label for="SignUpInputPassword" class="form-label mt-4">Password</label>
+        <input type="password" class="form-control" id="SignUpInputPassword" placeholder="enter password" pb-role="password">
+        <small id="passwordHelp" class="form-text text-muted">Remember creating a strong password protects you!</small>
+      </div>
+      <div class="form-group">
+        <label for="SignUpInputEmail" class="form-label mt-4">Email address</label>
+        <input type="email" class="form-control" id="SignUpInputEmail" aria-describedby="emailHelp" placeholder="name@example.com">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+    
+      <fieldset class="form-group">
+        <label class="mt-4">Gender</legend>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" style="font-size: smaller;" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+            Female
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio"  style="font-size: smaller;" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+            Male
+          </label>
+        </div>
+       
+      </fieldset>
+      <div class="form-group">
+        <label for="SignUpInputAddress" class="form-label mt-4">Addresses</label>
+        <input  type="text" class="form-control my-2" id="SignUpInputAddress" placeholder="Primary Address">
+        <input type="text" class="form-control my-2" id="SignUpInputAddress" placeholder="Secondary Address">
+      </div>
+      <div class="form-floating mt-5 pt-2 ">
+        <button class="btn  btn-primary  px-5" type="submit">Submit</button>
+      </div>
+      <div class=" my-3" >
+          <h6 >Already Have an account? <small class="text-danger"><a href="login.html"><u>Login in!</u></a></small></h6>
+      </div>
+      
+    </fieldset>
+  </form>
+</body>
+</html>
