@@ -5,7 +5,7 @@ const Post = require('./models/user');
 const bodyParser = require('body-parser');
 require('dotenv/config');
 mongoose.connect(process.env.DB_CONNECTION, { useNewUrlParser: true ,useUnifiedTopology: true,
-    useCreateIndex: true, }, () => console.log('connected to DB!'));
+useCreateIndex: true, }, () => console.log('connected to DB!'));
 app.use(bodyParser.json());
 app.use('/posts', postsRoute);
 app.use(bodyParser.urlencoded({
