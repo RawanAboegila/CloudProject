@@ -52,13 +52,13 @@
           </div>
           <div class="form-group">
             <legend for="Input_AddItemName" class="form-label mt-4">Item Name</legend>
-            <input type="text" class="form-control" id="Input_AddItemName" placeholder="ex Casio Calculator es991">
+            <input type="text" class="form-control" name="itemName" id="Input_AddItemName" placeholder="ex Casio Calculator es991">
             <small id="itemNameHelp" class="form-text text-muted">Enter a meaningful descriptive name for your item</small>
           </div>
          
           <div class="form-group">
             <legend for="exampleSelect1" class="form-label mt-4">Exchange Value</legend>
-            <select class="form-select" id="exampleSelect1">
+            <select class="form-select" id="exampleSelect1 " name="itemValue">
               <option>1</option>
               <option>2</option>
               <option>3</option>
@@ -71,7 +71,7 @@
           
           <div class="form-group">
             <legend for="exampleTextarea" class="form-label mt-4">Description</legend>
-            <textarea class="form-control" id="exampleTextarea" rows="3"  placeholder="A Casio Calculator , model: es991 , condition: Excellent Condition, used twice"></textarea>
+            <textarea class="form-control" id="exampleTextarea" rows="3"name="itemdesc"  placeholder="A Casio Calculator , model: es991 , condition: Excellent Condition, used twice"></textarea>
           </div>
          
 
@@ -79,13 +79,13 @@
             <legend class="mt-4">Intent</legend>
             <div class="form-check">
               <label class="form-check-label">
-                <input type="radio" style="font-size: small;" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                <input type="radio" style="font-size: small;" name="itemType" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
                 Donation
               </label>
             </div>
             <div class="form-check">
               <label class="form-check-label">
-                <input type="radio"  style="font-size: smaller;" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+                <input type="radio"  style="font-size: smaller;" name="itemType" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
                 Exchange
               </label>
             </div>

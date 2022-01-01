@@ -1,23 +1,33 @@
 const express = require('express');
 const signUpController=require('../controller/signUpController.js');
-const bkEnd = express.Router();
+const addItemController =require('../controller/addItemController.js');
+const signbk = express.Router();
+const itembk  =express.Router();
 
 
-bkEnd
+signbk
         .route('/')
         .get(signUpController.getSignUp)
         .post(signUpController.postSignUp);
 
 
-        bkEnd.get('/signUp', (req,res)=>{
+        signbk.get('/signUp', (req,res)=>{
                return res.render("signUp.ejs");
         });
 
-        bkEnd.get('/dashboard', (req,res)=>{
+        signbk.get('/signUp/dashboard', (req,res)=>{
                 return res.render("dashboard.ejs");
          });
-         
+
+
+itembk 
+         //.route('/')
+         .get(addItemController.getItem)
+         .post(addItemController.postItem);
         
 
 
-module.exports = bkEnd;
+module.exports = {
+       signbk :signbk,
+       itembk :itembk
+};

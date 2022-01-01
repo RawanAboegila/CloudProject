@@ -10,6 +10,11 @@ const ItemSchema = new mongoose.Schema({
        type: String,
        maxlength:[15,'item Type must be less than 15 char']
    },
+   itemdesc:{
+       type:String,
+       maxlength:[150,'item Type must be less than 15 char']
+
+   },
    itemName:{
        type: String,
        required: [true,'please add a item Name'],

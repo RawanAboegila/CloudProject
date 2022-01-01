@@ -9,7 +9,7 @@ mongoose.connect(process.env.DB_CONNECTION, { useNewUrlParser: true ,useUnifiedT
 useCreateIndex: true, }, () => console.log('connected to DB!'));
 app.use(bodyParser.json());
 
-app.use('/signup', signupRoute);
+// app.use('/signup', signupRoute);
 
 app.use(bodyParser.urlencoded({
     extended: true}));
